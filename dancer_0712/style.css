@@ -1,0 +1,28 @@
+.textColor_blue{
+    color: blue;
+}
+.textColor_red{
+    color: red;
+}
+.textColor_gy{
+    color: greenyellow;
+}
+.bGcolor_aque{
+    background-color: aqua;
+}
+.bGcolor_coral{
+    background-color: coral;
+}
+.bGcolor_gold{
+    background-color: gold;
+}
+.bGcolor_hp{
+    background-color: hotpink;
+}
+p:hover{
+    background-color: blueviolet;
+}
+h1:hover{
+    background-color: blueviolet;
+    text-align: center;
+}
