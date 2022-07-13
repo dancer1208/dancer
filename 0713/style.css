@@ -1,9 +1,12 @@
 body{
     text-align: center;
 }
+#div1{
+    background-color: coral;
+}
 h1,h2{
     color:rgba(68, 18, 142, 0.898);
-    background-color: rgb(133, 235, 120);
+    background-color: rgb(220, 241, 246);
     /* width: 400px; */
 }
 h4{
@@ -16,4 +19,11 @@ p{
 a:hover{
     color: blueviolet;
     background-color: black;
+}
+.divColor{
+    background-color: chartreuse;
+}
+.divSize{
+    width: 100px;
+    height: 100px;
 }

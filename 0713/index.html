@@ -11,22 +11,25 @@
     </script>
 </head>
 <body>
-    <h1>2022/07/12</h1>
-    <h2>dancer3 網頁第四天</h2>
-    <p>目標，網站開發，製作一個 js DOM測試</p>
-    <hr>
-    <p>選擇背景顏色</p>
-    <select name="選背景" id="colors" onchange="change()">
-        <option value="transparent">無色</option>
-        <option value="lightblue">天空藍</option>
-        <option value="lightpink">粉</option>
-        <option value="limegreen">綠</option>
-    </select>
-    <br>
-    <button id="btn1">鐵捲門</button>
-    <a href="http://120.119.67.10:5122">開關門</a>
-    <a href="http://120.119.67.10:4000/mjpg/video.mjpg">L0220</a>
-    
+    <div id="div1">
+        <h1>2022/07/12</h1>
+        <h2>dancer3 網頁第四天</h2>
+        <p>目標，網站開發，製作一個 js DOM測試</p>
+        <p id="demo"></p>
+        <hr>
+        <p>選擇背景顏色</p>
+        <select name="選背景" id="colors" onchange="change()">
+            <option value="transparent">無色</option>
+            <option value="lightblue">天空藍</option>
+            <option value="lightpink">粉</option>
+            <option value="limegreen">綠</option>
+        </select>
+        <br>
+        <button id="btn1">DOM</button>
+        <a href="http://120.119.67.10:5122">開關門</a>
+        <a href="http://120.119.67.10:4000/mjpg/video.mjpg">L0220</a>
+    </div>
+    <br><div class="divColor divSize"></div>
     <script>
         // function change() {
             //     document.body.style.background = document.getElementById("colors").value
@@ -44,7 +47,18 @@
             //     })
             document.getElementById("btn1").addEventListener("click",function(){
                 document.body.style.background = "springgreen";
+                document.getElementById("demo").innerHTML = "";
             })
+            // document.getElementById("btn1").addEventListener("click",function(){
+            //     document.getElementById("demo").innerHTML = "test";
+            // })
+            // document.getElementById("btn1").addEventListener("mouseover",function(){
+            //     document.getElementById("demo").innerHTML = "test";
+            // });
+            document.getElementById("btn1").addEventListener("mousemove",function(){
+                document.getElementById("demo").innerHTML = "ttest";
+                document.body.style.background = "transparent";
+            });
     </script>
     <br>
 
