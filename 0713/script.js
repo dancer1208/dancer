@@ -36,5 +36,9 @@
             document.getElementById("div2").addEventListener("mouseover",function(){
                 // document.getElementById("ip_1").value = "QQQ";
                 document.getElementById("tA_1").value = document.getElementById("tA_1").value + document.getElementById("ip_1").value;
-            })
+            });
+            document.write("test");
+            document.write("<h2>这是一个标题</h2>");
+            alert('222!')
+            
            
