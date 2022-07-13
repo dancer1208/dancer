@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancer_20220711</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1>2022/07/12</h1>
+    <h2>dancer3 網頁第四天</h2>
+    <p>目標，網站開發，製作一個 js DOM測試</p>
+    <hr>
+    <p>選擇背景顏色</p>
+    <select name="選背景" id="colors" onchange="change()">
+        <option value="transparent">無色</option>
+        <option value="lightblue">天空藍</option>
+        <option value="lightpink">粉</option>
+        <option value="limegreen">綠</option>
+    </select>
+    <br>
+    <button id="btn1">鐵捲門</button>
+    <a href="http://120.119.67.10:5122">開關門</a>
+    <a href="http://120.119.67.10:4000/mjpg/video.mjpg">L0220</a>
+    
+    <script>
+        // function change() {
+            //     document.body.style.background = document.getElementById("colors").value
+            // }
+            
+            // 物件分配法
+            document.getElementById("colors").addEventListener("change",function(){
+                document.body.style.background = document.getElementById("colors").value;
+            })
+            // document.getElementById("colors").addEventListener("change", function(){
+                //     document.body.style.background = document.getElementById("colors").value
+                // })
+            // document.getElementById("colors").addEventListener("change",()=>{
+            //         document.body.style.background = document.getElementById("colors").value;
+            //     })
+            document.getElementById("btn1").addEventListener("click",function(){
+                document.body.style.background = "springgreen";
+            })
+    </script>
+    <br>
+
+</body>
+</html>
