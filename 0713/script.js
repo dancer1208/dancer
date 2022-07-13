@@ -20,7 +20,8 @@
             //     })
             document.getElementById("btn1").addEventListener("click",function(){
                 document.body.style.background = "springgreen";
-                document.getElementById("demo").innerHTML = "";
+                document.getElementById("demo").innerHTML = ""; 
+                document.getElementById("tA_1").value = "";
             })
             // document.getElementById("btn1").addEventListener("click",function(){
             //     document.getElementById("demo").innerHTML = "test";
@@ -32,3 +33,8 @@
                 document.getElementById("demo").innerHTML = "ttest";
                 document.body.style.background = "transparent";
             });
+            document.getElementById("div2").addEventListener("mouseover",function(){
+                // document.getElementById("ip_1").value = "QQQ";
+                document.getElementById("tA_1").value = document.getElementById("tA_1").value + document.getElementById("ip_1").value;
+            })
+           
