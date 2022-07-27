@@ -1,1 +1,1 @@
-document.getElementById("hello").innerHTML = "外部連結 JS DOM！";
+document.getElementById("hello2").innerHTML = "外部連結 JS DOM！";
