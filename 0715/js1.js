@@ -1,0 +1,1 @@
+alert("自製 Script 外部連結！")
