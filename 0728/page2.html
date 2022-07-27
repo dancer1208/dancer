@@ -7,20 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>OnClick練習</h2>
-    <button onclick="display()">顯示</button>
-    <button onclick="display1()">藍色</button>
-    <button onclick="display2()">隱藏</button>
-    <p id="show"></p>
+    <h2>溫度轉換器 OnInput練習</h2>
+    <lable style="background-color: rgb(181, 237, 116);">請輸入攝氏度</lable>
+    <input type="number" placeholder="攝氏" oninput="converter(this.value)">
+
+
+    <p>華氏是：<span id="output"></span></p>
     <script>
-        function display(){
-            document.getElementById('show').innerHTML='<h2>Hello</h2>'
-        }
-        function display1(){
-            document.getElementById('show').innerHTML='<h2 style=color:blue>Hello</h2>'
-        }
-        function display2(){
-            document.getElementById('show').innerHTML=''
+        function converter(degree){
+            document.getElementById("output").innerHTML=degree*9/5+32;
         }
     </script>
 </body>
