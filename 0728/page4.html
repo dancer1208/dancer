@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>OnChange練習</h2>
+    <select id="dropdown" onchange="select()">
+        <option value="">請選擇</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+    </select>
+    <h3 id="show"></h3>
+    <img id="image" width="150px" height="250px" src="" alt="Picture:">
+    <script>
+        function select(){
+            var x = document.getElementById('dropdown').value;
+            document.getElementById('show').innerHTML="您選擇了："+x
+            document.getElementById('image').src = "images/"+x+".png"
+        }
+    </script>
+</body>
+</html>
