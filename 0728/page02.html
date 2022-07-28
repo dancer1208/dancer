@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oninput</title>
+</head>
+<body>
+    <h2>溫度轉換</h2>
+    <label>請輸入攝氏溫度：</label>
+    <input type="number" placeholder="攝氏度" oninput="converter1(this.value)">
+    <p>華氏是：<span id="output1"></span></p>
+
+    <br>
+
+    <label>請輸入華氏溫度：</label>
+    <input type="number" placeholder="華氏度" oninput="converter2(this.value)">
+    <p>華氏是：<span id="output2"></span></p>
+
+
+
+    <script>
+        function converter1(degree){
+            document.getElementById('output1').innerHTML=degree*9/5+32
+        }
+        function converter2(degree){
+            document.getElementById('output2').innerHTML=Math.round((degree-32)*5/9)
+        }
+    </script>
+</body>
+</html>
