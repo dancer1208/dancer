@@ -17,6 +17,15 @@
     <p id="display" style="color: blue;"></p>
     <br><hr>
 
+    <h1>DOM 改變背景顏色</h1>
+    <select id="colors" onchange="change()">
+        <option value="">選擇顏色</option>
+        <option value="transparent">無色</option>
+        <option value="lightblue">天空藍</option>
+        <option value="lightpink">幸福粉</option>
+        <option value="lightgreen">淡淡綠</option>
+    </select>
+
     <script>
         function message1(){
             document.getElementById("display").innerHTML="方法一"
@@ -41,6 +50,14 @@
         }
         btn5.addEventListener("click",showFunction);
 
+        // 改變顏色
+        // function change(){
+        //     document.body.style.background = document.getElementById("colors").value;
+        // }
+
+        document.addEventListener("change",()=>{
+            document.body.style.background = document.getElementById("colors").value;
+        })
     </script>
 
 </body>
