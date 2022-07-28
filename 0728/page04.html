@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <img id="car" src="images/car.png" width="100%" height="100%">
+
+    <div class="engine" onmouseover="show1()" onmouseout="noshow1()"></div>
+    
+    <div id="img1">
+        <img src="images/engine.jpg" alt="">
+        <h3 style="text-align: center; color: aliceblue;">引擎</h3>
+    </div>
+
+    <script>
+        function show1(){
+            img1.style.display="block";
+        }
+        function noshow1(){img1.style.display="none";}
+
+    </script>
+</body>
+</html>

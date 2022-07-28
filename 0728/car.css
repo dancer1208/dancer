@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(129,124,223);
+    background: linear-gradient(90deg, rgba(129,124,223,1) 5%, rgba(60,131,204,1) 29%, rgba(0,212,255,1) 100%);    
+    box-sizing: border-box;
+}
+.engine{
+    width: 150px;
+    height: 80px;
+    /* background: aqua; */
+    position: absolute;
+    top: 32%;
+    left: 28%;
+}
+.engine:hover{
+    border: 2px solid red;
+    background-color: gold;
+    opacity: 0.6;
+    transition: 1s;
+}
+
+#img1{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    /* display: none; */
+}
+
+#img1 img{
+    width: 250px;
+    height: 150px;
+}
