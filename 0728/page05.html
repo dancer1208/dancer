@@ -9,8 +9,8 @@
 <body style="text-align:center;">
     <h1>DOM 的5種方法</h1>
     <input type="button" value="方法一" onclick="message1()">
-    <input type="button" value="方法二">
-    <input type="button" value="方法三">
+    <input type="button" value="方法二" id="btn2">
+    <input type="button" value="方法三" id="btn3">
     <input type="button" value="方法四">
     <input type="button" value="方法五">
     <br>
@@ -21,6 +21,15 @@
         function message1(){
             document.getElementById("display").innerHTML="方法一"
         }
+
+        document.getElementById("btn2").addEventListener("click",function(){
+            document.getElementById("display").innerHTML='方法二'
+        })
+
+        document.getElementById("btn3").addEventListener("click",()=>{
+            document.getElementById("display").innerHTML="方法三"
+        })
+
     </script>
 
 </body>
