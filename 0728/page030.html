@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>明星onchange</title>
+    </head>
+    <body>
+        <h3>老公找誰？</h3>
+        <select id="dropdown" onchange="select()">
+            <option value="">我的另一半</option>
+            <option value="宋仲基">宋仲基</option>
+            <option value="朴寶劍">朴寶劍</option>
+            <option value="池昌旭">池昌旭</option>
+            <option value="朴炯植">朴炯植</option>
+        </select>
+        <h3 id="show"></h3>
+        <img id="image" src="" alt="photo" width="180px" height="250px">
+
+        <script>
+            function select(){
+                var x = document.getElementById("dropdown").value;
+                document.getElementById("show").innerHTML= "您選了："+x;
+                document.getElementById("image").src="images/"+x+".jpg";
+            }
+        </script>
+    </body>
+</html>
