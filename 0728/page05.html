@@ -11,8 +11,8 @@
     <input type="button" value="方法一" onclick="message1()">
     <input type="button" value="方法二" id="btn2">
     <input type="button" value="方法三" id="btn3">
-    <input type="button" value="方法四">
-    <input type="button" value="方法五">
+    <input type="button" value="方法四" id="btn4">
+    <input type="button" value="方法五" id="btn5">
     <br>
     <p id="display" style="color: blue;"></p>
     <br><hr>
@@ -29,6 +29,17 @@
         document.getElementById("btn3").addEventListener("click",()=>{
             document.getElementById("display").innerHTML="方法三"
         })
+
+        document.getElementById("btn4").onclick = () =>{
+            document.getElementById("display").innerHTML='方法四'
+        }
+
+        const btn5 = document.getElementById("btn5");
+        const show = document.getElementById("display");
+        function showFunction(){
+            show.innerHTML="方法五";
+        }
+        btn5.addEventListener("click",showFunction);
 
     </script>
 
